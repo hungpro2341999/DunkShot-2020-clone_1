@@ -1,0 +1,171 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1700442937042727435
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1700442937042727477}
+  - component: {fileID: 1700442937042727434}
+  m_Layer: 0
+  m_Name: GameCtrl
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1700442937042727477
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700442937042727435}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 497.70898, y: 709.25806, z: -38.75}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1700442937042727434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700442937042727435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39cbead98cefd08428f93ffe323a34e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Game_Type: 1
+  listplayer: []
+  ListBallDetail: []
+  time: 0
+  WorldSpace: {fileID: 0}
+  card:
+  - {fileID: 11400000, guid: 3eac866d484d4a54189a964ad1322a4c, type: 2}
+  - {fileID: 11400000, guid: bb69b1e7d3f9bf941bd76b1e6c81a0e1, type: 2}
+  - {fileID: 11400000, guid: ed9dc7500bf2bde429c70d3c0bf30b6d, type: 2}
+  - {fileID: 11400000, guid: 73f1bf8e8a09a0843a334822018689f0, type: 2}
+  - {fileID: 11400000, guid: 1d27a91e31291f84787a69ceb0dbe0b0, type: 2}
+  - {fileID: 11400000, guid: ec6a188fb7040f54eab01c33282f7bdf, type: 2}
+  - {fileID: 11400000, guid: 2ca9f053827d25f4db93664759fee086, type: 2}
+  - {fileID: 11400000, guid: 69711cf24aa93fe40a4d3949bdb17ae0, type: 2}
+  - {fileID: 11400000, guid: f0c1fa42c89a89d49a7f6c13e12bb252, type: 2}
+  - {fileID: 11400000, guid: f04207513fe9f7345bfe45d237ef4840, type: 2}
+  - {fileID: 11400000, guid: ea2134ef240b0db4c9b630f805df9865, type: 2}
+  - {fileID: 11400000, guid: aa0e4fcc16865724abb50668e8fb914a, type: 2}
+  - {fileID: 11400000, guid: b936895b5f70355469ec118a8c99ae7c, type: 2}
+  - {fileID: 11400000, guid: 1b69d5da909140f4f86460b987e07ef6, type: 2}
+  - {fileID: 11400000, guid: ae38d254bc9fb034ebc767ba76ce164f, type: 2}
+  - {fileID: 11400000, guid: 957d5febf4f6a4143a4fd9fd1648282b, type: 2}
+  - {fileID: 11400000, guid: 4dc60e11eaaa8c143a5be1d8947ca901, type: 2}
+  - {fileID: 11400000, guid: 2ebe1411495b49f47b6cf1ef58f9942a, type: 2}
+  - {fileID: 11400000, guid: 0185fdf8d2c91ad408451eca67f543ae, type: 2}
+  - {fileID: 11400000, guid: 21602dc049f29e24983b3f0d83eea47b, type: 2}
+  - {fileID: 11400000, guid: d9393b63a01bd8d4c8ec8f468997f16b, type: 2}
+  - {fileID: 11400000, guid: 20c5b3366245cff4f97364a579bd1bbc, type: 2}
+  - {fileID: 11400000, guid: 4a0cfd28eeaa6314d9f651e5369b4873, type: 2}
+  - {fileID: 11400000, guid: 0de28caa15c591948b41c74784011464, type: 2}
+  - {fileID: 11400000, guid: 8073058e2248b2b4498b308be2112c3a, type: 2}
+  - {fileID: 11400000, guid: d88aa2ec054af7d498014d0c90e9ccaf, type: 2}
+  - {fileID: 11400000, guid: f49e0bbf13b402341b7e45efe05de8db, type: 2}
+  - {fileID: 11400000, guid: fda7d5b370ef8164da7668da366ecb93, type: 2}
+  - {fileID: 11400000, guid: 54ae5cddf622ea64dbe49b751bdff3e0, type: 2}
+  - {fileID: 11400000, guid: 186b13c6e54616e4e9d975e71cf90789, type: 2}
+  - {fileID: 11400000, guid: 45a7e42c9bfcc8a48a764f0a762f17d4, type: 2}
+  - {fileID: 11400000, guid: c124e1fe26ddc0b428309a019c15e8f0, type: 2}
+  - {fileID: 11400000, guid: ada69ec1db656f54fbc31bd09a2937fb, type: 2}
+  - {fileID: 11400000, guid: 07a1f689ccb43664b88e4ea2f1c22c25, type: 2}
+  - {fileID: 11400000, guid: 61e360b47b4581047a1b7729cbcfcab7, type: 2}
+  - {fileID: 11400000, guid: c833d39e5ac44844fb5596a5794903a5, type: 2}
+  - {fileID: 11400000, guid: 84385df9b5a278c4e849a51ce57dada7, type: 2}
+  - {fileID: 11400000, guid: b22f87031c54ba84bba5aef467538c79, type: 2}
+  - {fileID: 11400000, guid: ee65c6e535814a44dadd2b75bd76fe65, type: 2}
+  - {fileID: 11400000, guid: c46fd63dd203a6f45b46678ce92e73c8, type: 2}
+  - {fileID: 11400000, guid: 4c0f35648e90cd3419d871c087240c82, type: 2}
+  - {fileID: 11400000, guid: 5161253d4830a4f45b3299bd2f484826, type: 2}
+  - {fileID: 11400000, guid: 338f36a50a5b6904a9530cb40b9133c9, type: 2}
+  - {fileID: 11400000, guid: e95895bd44102e44c8105ccf7d67c31c, type: 2}
+  - {fileID: 11400000, guid: ebbf27c5f4b0249449a4437f417104a7, type: 2}
+  - {fileID: 11400000, guid: f335060d7189a844abf7fbec3055826e, type: 2}
+  - {fileID: 11400000, guid: e6206fc2856dc124d97b91889dd277a7, type: 2}
+  - {fileID: 11400000, guid: c1a955894b30a5f46b6ad68b886a760c, type: 2}
+  - {fileID: 11400000, guid: db48c245f322af043aed2e15be4f354e, type: 2}
+  - {fileID: 11400000, guid: d582262c7f0fda846ace7db0656ac01c, type: 2}
+  - {fileID: 11400000, guid: 158f19c4576a95a4d82de72437457070, type: 2}
+  - {fileID: 11400000, guid: d8cf4682182a2e942bb8b217bc60933f, type: 2}
+  - {fileID: 11400000, guid: 982dcb58fcd473b43864151106f16157, type: 2}
+  - {fileID: 11400000, guid: afbcdf44e978d9e42b1a82ff4e064b21, type: 2}
+  - {fileID: 11400000, guid: 3af104bcb39bcfd4a97d9d8d904e33fe, type: 2}
+  - {fileID: 11400000, guid: dda61b8197a1ca14a9ad3e40586af780, type: 2}
+  - {fileID: 11400000, guid: 42aadc8e2030a5645b459e5ccc32b185, type: 2}
+  backGroundCard:
+  - {fileID: 11400000, guid: bb0f1ae340f33b743bed878eba079c23, type: 2}
+  - {fileID: 11400000, guid: 6862acc3375001f49974ce30817459b9, type: 2}
+  - {fileID: 11400000, guid: 9d829f348f765f449aee8995621d5e22, type: 2}
+  - {fileID: 11400000, guid: 088cbfc26b240b84f9b72528fc627286, type: 2}
+  - {fileID: 11400000, guid: c9ad4ecea18ded044adc84c48b766ae2, type: 2}
+  - {fileID: 11400000, guid: ba0e5630b34890943a4c0502029e74e1, type: 2}
+  ChallengesCard:
+  - {fileID: 11400000, guid: a01cb191201fafb45a8ad49688f6b717, type: 2}
+  - {fileID: 11400000, guid: 855b727ac4846b24daf1bb31876d0439, type: 2}
+  - {fileID: 11400000, guid: 0967ad22b2d0ef7409328458155f3444, type: 2}
+  - {fileID: 11400000, guid: 506aa5cb599613443b54ec376d64d4c1, type: 2}
+  - {fileID: 11400000, guid: 4ffe37fd3f7ef404dbe895443aec16b9, type: 2}
+  - {fileID: 11400000, guid: bfbc48aeb469c8541b9a6452eee2e8f4, type: 2}
+  - {fileID: 11400000, guid: f61eab6937a094e4298209420b682bb1, type: 2}
+  - {fileID: 11400000, guid: 23f20c8261d3ae64f987e14c7db35c28, type: 2}
+  - {fileID: 11400000, guid: 3e55e45fed6c2aa43902559d756bcd05, type: 2}
+  - {fileID: 11400000, guid: 05dd5d965753a674daf012963f1c982a, type: 2}
+  - {fileID: 11400000, guid: 3637f7d6aa58c9042a7d85862c4f9215, type: 2}
+  - {fileID: 11400000, guid: 79e7ccd8b511c954aaa2f36199c77a33, type: 2}
+  - {fileID: 11400000, guid: 40219c5f5489c724dbe3d8805664c335, type: 2}
+  - {fileID: 11400000, guid: 0825a44dcd33b18419d724b63c2477ec, type: 2}
+  - {fileID: 11400000, guid: 9565084c15ff551469838636f1fa8286, type: 2}
+  - {fileID: 11400000, guid: dd4dfa8a10407514f9b05f84858bb721, type: 2}
+  - {fileID: 11400000, guid: 2b41cf7c33909d242802e82ea9a63677, type: 2}
+  - {fileID: 11400000, guid: c5f83de0bb13f2e46a672265997df3e5, type: 2}
+  - {fileID: 11400000, guid: 9079235aa1db9714da689bae68117844, type: 2}
+  - {fileID: 11400000, guid: 1a217211768a74e4ea92039197eb5690, type: 2}
+  - {fileID: 11400000, guid: 8c3c85b47cd833446a64bfd63188105c, type: 2}
+  - {fileID: 11400000, guid: ac098e49c57f4024a8ac020994179ca4, type: 2}
+  - {fileID: 11400000, guid: 313bdcb17fb539a4ab0ce410c941c137, type: 2}
+  GameStart: 0
+  GamePause: 0
+  GameOver: 0
+  windownPause: {fileID: 0}
+  WindownGameOVer: {fileID: 0}
+  width: 0
+  height: 0
+  leftbottom: {x: 0, y: 0}
+  rightbottom: {x: 0, y: 0}
+  leftup: {x: 0, y: 0}
+  rightup: {x: 0, y: 0}
+  sizeCamera: 0
+  leftBottomReal: {x: 0, y: 0}
+  rightBottomReal: {x: 0, y: 0}
+  leftUpRead: {x: 0, y: 0}
+  rightUpReal: {x: 0, y: 0}
+  widthReal: 0
+  heightReal: 0
+  firstPlay: 1
+  sprite_ball: {fileID: 0}
+  getReward: 0
+  hour: 0
+  mininue: 0
+  second: 0
+  chaceSound: 0
+  star: 0
+  time_reward:
+    Month: 0
+    Day: 0
+    Hour: 0
+    Miniue: 0
+    Second: 0

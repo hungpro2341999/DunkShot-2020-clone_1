@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde392d4c19b817438fe0ebbb7306a6e, type: 3}
+  m_Name: C_6
+  m_EditorClassIdentifier: 
+  id: 6
+  Image: {fileID: 21300000, guid: 2ecccb6212bf688408adb89e0fa35d12, type: 3}
+  label: Double Kill
+  detail: 2 baskets in 1 shot in Basketwall
+  maxBar: 100
+  isTake: 0
+  level: 19000000320000004b00000064000000c8000000
+  reward: 64000000c8000000f4010000ee020000e8030000
+  levelCurr: 0
+  TakeRewardGame: 0000000000
+  isCompleQuest: 0
+  isComplete: 0

@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "544541717278",
+    "firebase_url": "https://sport-free-game-online.firebaseio.com",
+    "project_id": "sport-free-game-online",
+    "storage_bucket": "sport-free-game-online.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544541717278:android:820e00596630a7e4964f0f",
+        "android_client_info": {
+          "package_name": "com.dunk.shot.hit.game.basketball"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "544541717278-vb8nbp4ulqsut44743u3ke22esrdr0l9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAC1Wa_PPINpDCvVHw2oBk1PSF3B2FzG9A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "544541717278-vb8nbp4ulqsut44743u3ke22esrdr0l9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544541717278:android:50d702968d227906964f0f",
+        "android_client_info": {
+          "package_name": "com.hockey.allstar.battle.icerage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "544541717278-vb8nbp4ulqsut44743u3ke22esrdr0l9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAC1Wa_PPINpDCvVHw2oBk1PSF3B2FzG9A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "544541717278-vb8nbp4ulqsut44743u3ke22esrdr0l9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544541717278:android:f2e9b4ba16b8b8f4964f0f",
+        "android_client_info": {
+          "package_name": "com.topsport.supreme.duel.soccer.battle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "544541717278-vb8nbp4ulqsut44743u3ke22esrdr0l9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAC1Wa_PPINpDCvVHw2oBk1PSF3B2FzG9A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "544541717278-vb8nbp4ulqsut44743u3ke22esrdr0l9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 26e0504e3a668154bb9ee0114c741df1
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Pum: {instanceID: 0}
+  - Pong: {instanceID: 0}
+  - Normal: {instanceID: 0}
+  - Perfect: {instanceID: 0}
+  - NoramalObj: {instanceID: 0}
+  - PerfectObj: {instanceID: 0}
+  - Star: {instanceID: 0}
+  - Star2D: {instanceID: 0}
+  - Smoke_level_1: {fileID: 5273967886386306117, guid: 9f98e9968807b8142ab8609ca5dbeecc,
+      type: 3}
+  - Smoke_level_2: {fileID: 8497738433337676886, guid: 2ce47983fd2fc064ea6a2bd974eb9253,
+      type: 3}
+  - Smoke_level_3: {fileID: 3781663511339382370, guid: bfae7971fc969b8488f1c1adfad4a0ca,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

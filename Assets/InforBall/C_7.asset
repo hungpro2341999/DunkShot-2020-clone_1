@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde392d4c19b817438fe0ebbb7306a6e, type: 3}
+  m_Name: C_7
+  m_EditorClassIdentifier: 
+  id: 7
+  Image: {fileID: 21300000, guid: 3d6cacc259120f34ca6b5a2554dd6576, type: 3}
+  label: Super Duper Mega Power
+  detail: '"full power shot" score'
+  maxBar: 0
+  isTake: 0
+  level: 0a00000014000000280000005000000078000000
+  reward: 64000000c8000000f4010000ee020000e8030000
+  levelCurr: 0
+  TakeRewardGame: 0101010100
+  isComplete: 0

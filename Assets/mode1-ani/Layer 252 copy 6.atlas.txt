@@ -1,0 +1,90 @@
+
+Layer 252 copy 6.png
+size: 1432,332
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ball
+  rotate: true
+  xy: 1304, 1
+  size: 44, 45
+  orig: 44, 45
+  offset: 0, 0
+  index: -1
+bas1
+  rotate: true
+  xy: 1388, 62
+  size: 107, 43
+  orig: 107, 43
+  offset: 0, 0
+  index: -1
+bas2
+  rotate: true
+  xy: 1009, 32
+  size: 113, 167
+  orig: 113, 167
+  offset: 0, 0
+  index: -1
+bg
+  rotate: false
+  xy: 1, 6
+  size: 503, 323
+  orig: 503, 323
+  offset: 0, 0
+  index: -1
+bg1
+  rotate: false
+  xy: 505, 6
+  size: 503, 323
+  orig: 503, 323
+  offset: 0, 0
+  index: -1
+gun
+  rotate: true
+  xy: 1298, 170
+  size: 159, 116
+  orig: 159, 116
+  offset: 0, 0
+  index: -1
+gun2
+  rotate: true
+  xy: 1319, 46
+  size: 35, 58
+  orig: 35, 58
+  offset: 0, 0
+  index: -1
+hand1
+  rotate: false
+  xy: 1248, 5
+  size: 55, 57
+  orig: 55, 57
+  offset: 0, 0
+  index: -1
+hand2
+  rotate: false
+  xy: 1177, 63
+  size: 141, 82
+  orig: 141, 82
+  offset: 0, 0
+  index: -1
+light
+  rotate: false
+  xy: 1319, 82
+  size: 68, 87
+  orig: 68, 87
+  offset: 0, 0
+  index: -1
+line
+  rotate: false
+  xy: 1009, 146
+  size: 288, 183
+  orig: 288, 183
+  offset: 0, 0
+  index: -1
+txt
+  rotate: false
+  xy: 1009, 1
+  size: 238, 30
+  orig: 238, 30
+  offset: 0, 0
+  index: -1

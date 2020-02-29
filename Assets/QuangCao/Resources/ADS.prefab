@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1462424587077624}
+  m_IsPrefabAsset: 1
+--- !u!1 &1462424587077624
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4512892915639914}
+  - component: {fileID: 114075708017243130}
+  m_Layer: 0
+  m_Name: ADS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4512892915639914
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1462424587077624}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114075708017243130
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1462424587077624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e098affe06fdd243b789eec966e80c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bannerType: 1
+  ID_BANNER: ca-app-pub-3441533802606818/4380320292
+  ID_FULL: ca-app-pub-3441533802606818/9940479170
+  ID_REWARD: ca-app-pub-3441533802606818/7314315837
+  ID_UNITY_ADS: 2987551
+  ID_MORE: 
+  isUseAdmob: 1
+  isUseUnityAds: 1
+  isUseFireBase: 0
+  isStartBanner: 0
+  USE_ADMOB: USE_ADMOB
+  USE_UNITY_ADS: USE_UNITY_ADS
+  USE_FIREBASE: USE_FIREBASE

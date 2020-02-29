@@ -1,0 +1,225 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 818512 bytes for Chunk::new
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (allocation.cpp:390), pid=19480, tid=0x000000000000463c
+#
+# JRE version: OpenJDK Runtime Environment (8.0) (build 1.8.0-adoptopenjdk-_2018_05_19_00_59-b00)
+# Java VM: OpenJDK 64-Bit Server VM (25.71-b00 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000001975a000):  JavaThread "C2 CompilerThread0" daemon [_thread_in_native, id=17980, stack(0x0000000019f30000,0x000000001a030000)]
+
+Stack: [0x0000000019f30000,0x000000001a030000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+Current CompileTask:
+C2:   2645  850       4       java.io.WinNTFileSystem::normalize (143 bytes)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x00000000197ee800 JavaThread "Service Thread" daemon [_thread_blocked, id=7468, stack(0x000000001a330000,0x000000001a430000)]
+  0x0000000019769000 JavaThread "C1 CompilerThread3" daemon [_thread_blocked, id=14788, stack(0x000000001a230000,0x000000001a330000)]
+  0x0000000019760000 JavaThread "C2 CompilerThread2" daemon [_thread_blocked, id=6496, stack(0x000000001a130000,0x000000001a230000)]
+  0x000000001975d000 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=12464, stack(0x000000001a030000,0x000000001a130000)]
+=>0x000000001975a000 JavaThread "C2 CompilerThread0" daemon [_thread_in_native, id=17980, stack(0x0000000019f30000,0x000000001a030000)]
+  0x0000000019759000 JavaThread "Attach Listener" daemon [_thread_blocked, id=18724, stack(0x0000000019e30000,0x0000000019f30000)]
+  0x0000000019758000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=20408, stack(0x0000000019d30000,0x0000000019e30000)]
+  0x0000000019751000 JavaThread "Finalizer" daemon [_thread_blocked, id=19780, stack(0x0000000019b30000,0x0000000019c30000)]
+  0x000000001785b000 JavaThread "Reference Handler" daemon [_thread_blocked, id=16240, stack(0x0000000019630000,0x0000000019730000)]
+  0x000000000281e000 JavaThread "main" [_thread_in_native, id=8876, stack(0x00000000026f0000,0x00000000027f0000)]
+
+Other Threads:
+  0x0000000017856800 VMThread [stack: 0x0000000019530000,0x0000000019630000] [id=18516]
+  0x00000000197f0000 WatcherThread [stack: 0x000000001a430000,0x000000001a530000] [id=1292]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ PSYoungGen      total 37888K, used 22000K [0x00000000d6000000, 0x00000000d8a00000, 0x0000000100000000)
+  eden space 32768K, 51% used [0x00000000d6000000,0x00000000d70824b8,0x00000000d8000000)
+  from space 5120K, 99% used [0x00000000d8000000,0x00000000d84f9bc0,0x00000000d8500000)
+  to   space 5120K, 0% used [0x00000000d8500000,0x00000000d8500000,0x00000000d8a00000)
+ ParOldGen       total 86016K, used 64K [0x0000000082000000, 0x0000000087400000, 0x00000000d6000000)
+  object space 86016K, 0% used [0x0000000082000000,0x0000000082010000,0x0000000087400000)
+ Metaspace       used 8133K, capacity 8286K, committed 8320K, reserved 1056768K
+  class space    used 1058K, capacity 1125K, committed 1152K, reserved 1048576K
+
+Card table byte_map: [0x0000000011ce0000,0x00000000120e0000] byte_map_base: 0x00000000118d0000
+
+Marking Bits: (ParMarkBitMap*) 0x000000006e4bbe50
+ Begin Bits: [0x0000000012b80000, 0x0000000014b00000)
+ End Bits:   [0x0000000014b00000, 0x0000000016a80000)
+
+Polling page: 0x0000000000900000
+
+CodeCache: size=245760Kb used=3376Kb max_used=3395Kb free=242383Kb
+ bounds [0x0000000002920000, 0x0000000002c80000, 0x0000000011920000]
+ total_blobs=1165 nmethods=870 adapters=209
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 2.568 Thread 0x0000000019769000  866       1       sun.misc.URLClassPath$JarLoader::access$1000 (5 bytes)
+Event: 2.568 Thread 0x0000000019769000 nmethod 866 0x0000000002c57590 code [0x0000000002c576e0, 0x0000000002c577d0]
+Event: 2.568 Thread 0x0000000019769000  867       1       java.util.zip.ZipFile::getName (5 bytes)
+Event: 2.568 Thread 0x0000000019769000 nmethod 867 0x0000000002c572d0 code [0x0000000002c57420, 0x0000000002c57530]
+Event: 2.569 Thread 0x0000000019769000  869       3       java.util.Vector::elementData (7 bytes)
+Event: 2.569 Thread 0x0000000019769000 nmethod 869 0x0000000002c56f10 code [0x0000000002c57060, 0x0000000002c571d0]
+Event: 2.572 Thread 0x0000000019760000  870 % !   4       sun.net.www.ParseUtil::decode @ 69 (316 bytes)
+Event: 2.610 Thread 0x0000000019769000  871       3       java.util.jar.JarFile::<init> (12 bytes)
+Event: 2.610 Thread 0x0000000019769000 nmethod 871 0x0000000002c56ad0 code [0x0000000002c56c40, 0x0000000002c56e48]
+Event: 2.625 Thread 0x0000000019760000 nmethod 870% 0x0000000002c6e5d0 code [0x0000000002c6e880, 0x0000000002c708c0]
+
+GC Heap History (2 events):
+Event: 2.068 GC heap before
+{Heap before GC invocations=1 (full 0):
+ PSYoungGen      total 37888K, used 32768K [0x00000000d6000000, 0x00000000d8a00000, 0x0000000100000000)
+  eden space 32768K, 100% used [0x00000000d6000000,0x00000000d8000000,0x00000000d8000000)
+  from space 5120K, 0% used [0x00000000d8500000,0x00000000d8500000,0x00000000d8a00000)
+  to   space 5120K, 0% used [0x00000000d8000000,0x00000000d8000000,0x00000000d8500000)
+ ParOldGen       total 86016K, used 0K [0x0000000082000000, 0x0000000087400000, 0x00000000d6000000)
+  object space 86016K, 0% used [0x0000000082000000,0x0000000082000000,0x0000000087400000)
+ Metaspace       used 8043K, capacity 8222K, committed 8320K, reserved 1056768K
+  class space    used 1058K, capacity 1125K, committed 1152K, reserved 1048576K
+Event: 2.073 GC heap after
+Heap after GC invocations=1 (full 0):
+ PSYoungGen      total 37888K, used 5094K [0x00000000d6000000, 0x00000000d8a00000, 0x0000000100000000)
+  eden space 32768K, 0% used [0x00000000d6000000,0x00000000d6000000,0x00000000d8000000)
+  from space 5120K, 99% used [0x00000000d8000000,0x00000000d84f9bc0,0x00000000d8500000)
+  to   space 5120K, 0% used [0x00000000d8500000,0x00000000d8500000,0x00000000d8a00000)
+ ParOldGen       total 86016K, used 64K [0x0000000082000000, 0x0000000087400000, 0x00000000d6000000)
+  object space 86016K, 0% used [0x0000000082000000,0x0000000082010000,0x0000000087400000)
+ Metaspace       used 8043K, capacity 8222K, committed 8320K, reserved 1056768K
+  class space    used 1058K, capacity 1125K, committed 1152K, reserved 1048576K
+}
+
+Deoptimization events (4 events):
+Event: 0.446 Thread 0x000000000281e000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x0000000002a723d8 method=java.lang.String.toLowerCase(Ljava/util/Locale;)Ljava/lang/String; @ 85
+Event: 1.687 Thread 0x000000000281e000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x0000000002ba629c method=java.util.HashMap.hash(Ljava/lang/Object;)I @ 1
+Event: 1.975 Thread 0x000000000281e000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x0000000002bcc060 method=java.util.jar.Manifest$FastInputStream.readLine([BII)I @ 87
+Event: 2.564 Thread 0x000000000281e000 Uncommon trap: reason=class_check action=maybe_recompile pc=0x0000000002beede8 method=java.util.HashMap.putVal(ILjava/lang/Object;Ljava/lang/Object;ZZ)Ljava/lang/Object; @ 203
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (10 events):
+Event: 1.687 Thread 0x000000000281e000 Implicit null exception at 0x0000000002ba6095 to 0x0000000002ba628d
+Event: 1.763 Thread 0x000000000281e000 Exception <a 'java/lang/ArrayIndexOutOfBoundsException'> (0x00000000d769da50) thrown at [C:\Users\jenkins\workspace\openjdk8_build_x86-64_windows\openjdk\hotspot\src\share\vm\runtime\sharedRuntime.cpp, line 605]
+Event: 1.763 Thread 0x000000000281e000 Exception <a 'java/lang/ArrayIndexOutOfBoundsException'> (0x00000000d769fe68) thrown at [C:\Users\jenkins\workspace\openjdk8_build_x86-64_windows\openjdk\hotspot\src\share\vm\runtime\sharedRuntime.cpp, line 605]
+Event: 1.763 Thread 0x000000000281e000 Exception <a 'java/lang/ArrayIndexOutOfBoundsException'> (0x00000000d76ab710) thrown at [C:\Users\jenkins\workspace\openjdk8_build_x86-64_windows\openjdk\hotspot\src\share\vm\runtime\sharedRuntime.cpp, line 605]
+Event: 1.763 Thread 0x000000000281e000 Exception <a 'java/lang/ArrayIndexOutOfBoundsException'> (0x00000000d76ad5b0) thrown at [C:\Users\jenkins\workspace\openjdk8_build_x86-64_windows\openjdk\hotspot\src\share\vm\runtime\sharedRuntime.cpp, line 605]
+Event: 1.764 Thread 0x000000000281e000 Exception <a 'java/lang/ArrayIndexOutOfBoundsException'> (0x00000000d76bb450) thrown at [C:\Users\jenkins\workspace\openjdk8_build_x86-64_windows\openjdk\hotspot\src\share\vm\runtime\sharedRuntime.cpp, line 605]
+Event: 1.764 Thread 0x000000000281e000 Exception <a 'java/lang/ArrayIndexOutOfBoundsException'> (0x00000000d76c5d20) thrown at [C:\Users\jenkins\workspace\openjdk8_build_x86-64_windows\openjdk\hotspot\src\share\vm\runtime\sharedRuntime.cpp, line 605]
+Event: 1.764 Thread 0x000000000281e000 Exception <a 'java/lang/ArrayIndexOutOfBoundsException'> (0x00000000d76c8178) thrown at [C:\Users\jenkins\workspace\openjdk8_build_x86-64_windows\openjdk\hotspot\src\share\vm\runtime\sharedRuntime.cpp, line 605]
+Event: 1.764 Thread 0x000000000281e000 Exception <a 'java/lang/ArrayIndexOutOfBoundsException'> (0x00000000d76ca5a8) thrown at [C:\Users\jenkins\workspace\openjdk8_build_x86-64_windows\openjdk\hotspot\src\share\vm\runtime\sharedRuntime.cpp, line 605]
+Event: 1.764 Thread 0x000000000281e000 Exception <a 'java/lang/ArrayIndexOutOfBoundsException'> (0x00000000d76cc3d0) thrown at [C:\Users\jenkins\workspace\openjdk8_build_x86-64_windows\openjdk\hotspot\src\share\vm\runtime\sharedRuntime.cpp, line 605]
+
+Events (10 events):
+Event: 1.993 loading class org/gradle/util/GUtil done
+Event: 1.994 loading class org/gradle/api/internal/classpath/DefaultModuleRegistry$DefaultModule
+Event: 1.994 loading class org/gradle/api/internal/classpath/DefaultModuleRegistry$DefaultModule done
+Event: 2.068 Executing VM operation: ParallelGCFailedAllocation
+Event: 2.073 Executing VM operation: ParallelGCFailedAllocation done
+Event: 2.467 Thread 0x000000000281e000 DEOPT PACKING pc=0x0000000002a9894c sp=0x00000000027ea380
+Event: 2.467 Thread 0x000000000281e000 DEOPT UNPACKING pc=0x00000000029675d0 sp=0x00000000027ea1f8 mode 0
+Event: 2.564 Thread 0x000000000281e000 Uncommon trap: trap_request=0xffffffde fr.pc=0x0000000002beede8
+Event: 2.564 Thread 0x000000000281e000 DEOPT PACKING pc=0x0000000002beede8 sp=0x00000000027ed100
+Event: 2.564 Thread 0x000000000281e000 DEOPT UNPACKING pc=0x000000000296557b sp=0x00000000027ed088 mode 2
+
+
+Dynamic libraries:
+0x00007ff6c78f0000 - 0x00007ff6c7925000 	C:\Program Files\Unity\Hub\Editor\2018.3.8f1\Editor\Data\PlaybackEngines\AndroidPlayer\Tools\OpenJDK\Windows\bin\java.exe
+0x00007ff840840000 - 0x00007ff840a30000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ff83ec60000 - 0x00007ff83ed12000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ff83d850000 - 0x00007ff83daf3000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ff83f460000 - 0x00007ff83f503000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ff83fea0000 - 0x00007ff83ff3e000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ff83f3c0000 - 0x00007ff83f457000 	C:\WINDOWS\System32\sechost.dll
+0x00007ff83f510000 - 0x00007ff83f630000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ff83edf0000 - 0x00007ff83ef84000 	C:\WINDOWS\System32\USER32.dll
+0x00007ff83db80000 - 0x00007ff83dba1000 	C:\WINDOWS\System32\win32u.dll
+0x00007ff83ec30000 - 0x00007ff83ec56000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ff83dc60000 - 0x00007ff83ddf4000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ff83e700000 - 0x00007ff83e79e000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ff83de80000 - 0x00007ff83df7a000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ff82e110000 - 0x00007ff82e395000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.18362.476_none_e6c4b11b130f2595\COMCTL32.dll
+0x00007ff83e8f0000 - 0x00007ff83ec26000 	C:\WINDOWS\System32\combase.dll
+0x00007ff83db00000 - 0x00007ff83db80000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ff8407d0000 - 0x00007ff8407fe000 	C:\WINDOWS\System32\IMM32.DLL
+0x000000006e540000 - 0x000000006e612000 	C:\Program Files\Unity\Hub\Editor\2018.3.8f1\Editor\Data\PlaybackEngines\AndroidPlayer\Tools\OpenJDK\Windows\jre\bin\msvcr100.dll
+0x000000006dcf0000 - 0x000000006e539000 	C:\Program Files\Unity\Hub\Editor\2018.3.8f1\Editor\Data\PlaybackEngines\AndroidPlayer\Tools\OpenJDK\Windows\jre\bin\server\jvm.dll
+0x00007ff8407c0000 - 0x00007ff8407c8000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ff839840000 - 0x00007ff839849000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ff82eff0000 - 0x00007ff82effa000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ff83b2a0000 - 0x00007ff83b2c4000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ff83f2a0000 - 0x00007ff83f30f000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ff83b240000 - 0x00007ff83b26d000 	C:\WINDOWS\SYSTEM32\winmmbase.dll
+0x00007ff83d800000 - 0x00007ff83d84a000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x00007ff8395a0000 - 0x00007ff8395af000 	C:\Program Files\Unity\Hub\Editor\2018.3.8f1\Editor\Data\PlaybackEngines\AndroidPlayer\Tools\OpenJDK\Windows\jre\bin\verify.dll
+0x00007ff82d760000 - 0x00007ff82d789000 	C:\Program Files\Unity\Hub\Editor\2018.3.8f1\Editor\Data\PlaybackEngines\AndroidPlayer\Tools\OpenJDK\Windows\jre\bin\java.dll
+0x00007ff839550000 - 0x00007ff839566000 	C:\Program Files\Unity\Hub\Editor\2018.3.8f1\Editor\Data\PlaybackEngines\AndroidPlayer\Tools\OpenJDK\Windows\jre\bin\zip.dll
+0x00007ff83f7b0000 - 0x00007ff83fe95000 	C:\WINDOWS\System32\SHELL32.dll
+0x00007ff840230000 - 0x00007ff8402d9000 	C:\WINDOWS\System32\shcore.dll
+0x00007ff83df80000 - 0x00007ff83e6fe000 	C:\WINDOWS\System32\windows.storage.dll
+0x00007ff83d790000 - 0x00007ff83d7af000 	C:\WINDOWS\System32\profapi.dll
+0x00007ff83d740000 - 0x00007ff83d78a000 	C:\WINDOWS\System32\powrprof.dll
+0x00007ff83d710000 - 0x00007ff83d720000 	C:\WINDOWS\System32\UMPDC.dll
+0x00007ff83f160000 - 0x00007ff83f1b2000 	C:\WINDOWS\System32\shlwapi.dll
+0x00007ff83d720000 - 0x00007ff83d731000 	C:\WINDOWS\System32\kernel.appcore.dll
+0x00007ff83de00000 - 0x00007ff83de17000 	C:\WINDOWS\System32\cryptsp.dll
+0x00007ff837ee0000 - 0x00007ff837efa000 	C:\Program Files\Unity\Hub\Editor\2018.3.8f1\Editor\Data\PlaybackEngines\AndroidPlayer\Tools\OpenJDK\Windows\jre\bin\net.dll
+0x00007ff83cf80000 - 0x00007ff83cfe7000 	C:\WINDOWS\system32\mswsock.dll
+0x00007ff8354d0000 - 0x00007ff8354e1000 	C:\Program Files\Unity\Hub\Editor\2018.3.8f1\Editor\Data\PlaybackEngines\AndroidPlayer\Tools\OpenJDK\Windows\jre\bin\nio.dll
+0x00007ff8354b0000 - 0x00007ff8354ce000 	C:\Users\DELL\.gradle\native\25\windows-amd64\native-platform.dll
+0x00007ff8347a0000 - 0x00007ff8347ad000 	C:\Program Files\Unity\Hub\Editor\2018.3.8f1\Editor\Data\PlaybackEngines\AndroidPlayer\Tools\OpenJDK\Windows\jre\bin\management.dll
+
+VM Arguments:
+java_command: org.gradle.launcher.GradleMain -Dorg.gradle.jvmargs=-Xmx4096m --stop
+java_class_path (initial): C:\Program Files\Unity\Hub\Editor\2018.3.8f1\Editor\Data\PlaybackEngines\AndroidPlayer\Tools\gradle\lib\gradle-launcher-4.6.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Unity\Hub\Editor\2018.3.8f1\Editor\Data\PlaybackEngines\AndroidPlayer/Tools\OpenJDK\Windows
+PATH=C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Users\DELL\AppData\Local\Microsoft\WindowsApps;
+USERNAME=DELL
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 142 Stepping 10, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 18362 (10.0.18362.329)
+
+CPU:total 8 (initial active 8) (4 cores per cpu, 2 threads per core) family 6 model 142 stepping 10, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx
+
+Memory: 4k page, physical 8250436k(1781336k free), swap 12444740k(7724k free)
+
+vm_info: OpenJDK 64-Bit Server VM (25.71-b00) for windows-amd64 JRE (1.8.0-adoptopenjdk-_2018_05_19_00_59-b00), built on May 19 2018 01:02:12 by "jenkins" with MS VC++ 10.0 (VS2010)
+
+time: Sat Nov 23 03:27:24 2019
+elapsed time: 2 seconds (0d 0h 0m 2s)
+

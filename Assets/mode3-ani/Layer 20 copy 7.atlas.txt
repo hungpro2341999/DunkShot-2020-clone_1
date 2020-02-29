@@ -1,0 +1,62 @@
+
+Layer 20 copy 7.png
+size: 684,328
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arr
+  rotate: false
+  xy: 640, 195
+  size: 42, 50
+  orig: 42, 50
+  offset: 0, 0
+  index: -1
+ball
+  rotate: false
+  xy: 639, 55
+  size: 44, 45
+  orig: 44, 45
+  offset: 0, 0
+  index: -1
+bas1
+  rotate: true
+  xy: 640, 246
+  size: 78, 30
+  orig: 78, 30
+  offset: 0, 0
+  index: -1
+bas2
+  rotate: false
+  xy: 505, 26
+  size: 77, 60
+  orig: 77, 60
+  offset: 0, 0
+  index: -1
+bg
+  rotate: false
+  xy: 1, 1
+  size: 503, 323
+  orig: 503, 323
+  offset: 0, 0
+  index: -1
+hand
+  rotate: false
+  xy: 583, 29
+  size: 55, 57
+  orig: 55, 57
+  offset: 0, 0
+  index: -1
+line
+  rotate: true
+  xy: 505, 87
+  size: 237, 103
+  orig: 237, 103
+  offset: 0, 0
+  index: -1
+txt
+  rotate: true
+  xy: 609, 101
+  size: 223, 30
+  orig: 223, 30
+  offset: 0, 0
+  index: -1

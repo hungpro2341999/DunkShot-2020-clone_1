@@ -1,0 +1,69 @@
+
+Rounded Rectangle 61 copy 4.png
+size: 760,328
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ball
+  rotate: true
+  xy: 675, 3
+  size: 44, 45
+  orig: 44, 45
+  offset: 0, 0
+  index: -1
+bas1
+  rotate: true
+  xy: 686, 48
+  size: 107, 43
+  orig: 107, 43
+  offset: 0, 0
+  index: -1
+bas2
+  rotate: false
+  xy: 534, 157
+  size: 113, 167
+  orig: 113, 167
+  offset: 0, 0
+  index: -1
+bg
+  rotate: false
+  xy: 1, 1
+  size: 503, 323
+  orig: 503, 323
+  offset: 0, 0
+  index: -1
+hand1
+  rotate: true
+  xy: 617, 12
+  size: 55, 57
+  orig: 55, 57
+  offset: 0, 0
+  index: -1
+hand2
+  rotate: true
+  xy: 534, 15
+  size: 141, 82
+  orig: 141, 82
+  offset: 0, 0
+  index: -1
+light
+  rotate: false
+  xy: 617, 68
+  size: 68, 87
+  orig: 68, 87
+  offset: 0, 0
+  index: -1
+line
+  rotate: true
+  xy: 648, 156
+  size: 168, 108
+  orig: 168, 108
+  offset: 0, 0
+  index: -1
+txt
+  rotate: true
+  xy: 505, 53
+  size: 271, 28
+  orig: 271, 28
+  offset: 0, 0
+  index: -1

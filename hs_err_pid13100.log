@@ -1,0 +1,221 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x000000006432d767, pid=13100, tid=0x00000000000036dc
+#
+# JRE version: OpenJDK Runtime Environment (8.0) (build 1.8.0-adoptopenjdk-_2018_05_19_00_59-b00)
+# Java VM: OpenJDK 64-Bit Server VM (25.71-b00 mixed mode windows-amd64 compressed oops)
+# Problematic frame:
+# V  [jvm.dll+0x1ed767]
+#
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000019d01000):  JavaThread "Finalizer" daemon [_thread_in_vm, id=14044, stack(0x000000001a0e0000,0x000000001a1e0000)]
+
+siginfo: ExceptionCode=0xc0000005, writing address 0x000000001a1d9220
+
+Registers:
+RAX=0x000000001a1d9220, RBX=0x0000000000000007, RCX=0x0000000000006000, RDX=0x0000000000000006
+RSP=0x000000001a1df220, RBP=0x0000000000000000, RSI=0x000000001a1df220, RDI=0x0000000000000007
+R8 =0x0000000000000006, R9 =0x0000000002eb9220, R10=0x0000000017508a38, R11=0x000000001a0ea160
+R12=0x0000000002eb9220, R13=0x0000000019d01000, R14=0x000000001a1df2e8, R15=0x0000000017508a38
+RIP=0x000000006432d767, EFLAGS=0x0000000000010202
+
+Top of Stack: (sp=0x000000001a1df220)
+0x000000001a1df220:   0000000000000001 00000001000068d0
+0x000000001a1df230:   0000000019d01000 0000000002eb9220
+0x000000001a1df240:   00000000ffffffff 000000006432e697
+0x000000001a1df250:   000000001a1df350 0000000017508a38
+0x000000001a1df260:   0000000019d01000 00000000641dbae3
+0x000000001a1df270:   000000001a1df2b0 0000000019d01000
+0x000000001a1df280:   000000001a1df340 0000000019d01000
+0x000000001a1df290:   0000000017508a38 0000000019d01000
+0x000000001a1df2a0:   0000000002ed3920 0000000019d01000
+0x000000001a1df2b0:   0000000017508a38 0000000019d01000
+0x000000001a1df2c0:   000000001743e6d8 0000000019d01000
+0x000000001a1df2d0:   0000000000000001 0000000017508a38
+0x000000001a1df2e0:   0000000019d01000 0000000017e01d20
+0x000000001a1df2f0:   0000000019d01000 00000000641dd24d
+0x000000001a1df300:   000000001a1df608 00000001000068d0
+0x000000001a1df310:   000000010001c540 0000000002d837bc 
+
+Instructions: (pc=0x000000006432d767)
+0x000000006432d747:   48 89 6c 24 30 33 ed 66 90 e8 db ce 07 00 ff c3
+0x000000006432d757:   48 63 c8 48 8b c6 48 0f af cf 48 ff c7 48 2b c1
+0x000000006432d767:   89 28 48 63 c3 48 3b 05 c5 ae 57 00 7e db 48 8b
+0x000000006432d777:   6c 24 30 48 8b 5c 24 38 48 8b 74 24 40 48 83 c4 
+
+
+Register to memory mapping:
+
+RAX=0x000000001a1d9220 is pointing into the stack for thread: 0x0000000019d01000
+RBX=0x0000000000000007 is an unknown value
+RCX=0x0000000000006000 is an unknown value
+RDX=0x0000000000000006 is an unknown value
+RSP=0x000000001a1df220 is pointing into the stack for thread: 0x0000000019d01000
+RBP=0x0000000000000000 is an unknown value
+RSI=0x000000001a1df220 is pointing into the stack for thread: 0x0000000019d01000
+RDI=0x0000000000000007 is an unknown value
+R8 =0x0000000000000006 is an unknown value
+R9 =0x0000000002eb9220 is an unknown value
+R10={method} {0x0000000017508a40} 'run' '()V' in 'java/lang/ref/Finalizer$FinalizerThread'
+R11=0x000000001a0ea160 is pointing into the stack for thread: 0x0000000019d01000
+R12=0x0000000002eb9220 is an unknown value
+R13=0x0000000019d01000 is a thread
+R14=0x000000001a1df2e8 is pointing into the stack for thread: 0x0000000019d01000
+R15={method} {0x0000000017508a40} 'run' '()V' in 'java/lang/ref/Finalizer$FinalizerThread'
+
+
+Stack: [0x000000001a0e0000,0x000000001a1e0000],  sp=0x000000001a1df220,  free space=1020k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x000000001a8e3800 JavaThread "Service Thread" daemon [_thread_blocked, id=19584, stack(0x000000001b0e0000,0x000000001b1e0000)]
+  0x0000000019d1e800 JavaThread "C1 CompilerThread3" daemon [_thread_blocked, id=19752, stack(0x000000001a7e0000,0x000000001a8e0000)]
+  0x0000000019d18000 JavaThread "C2 CompilerThread2" daemon [_thread_blocked, id=1608, stack(0x000000001a6e0000,0x000000001a7e0000)]
+  0x0000000019d17000 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=10436, stack(0x000000001a5e0000,0x000000001a6e0000)]
+  0x0000000017e0e800 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=6864, stack(0x000000001a4e0000,0x000000001a5e0000)]
+  0x0000000019d11000 JavaThread "Attach Listener" daemon [_thread_blocked, id=22304, stack(0x000000001a3e0000,0x000000001a4e0000)]
+  0x0000000019d10000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=3180, stack(0x000000001a2e0000,0x000000001a3e0000)]
+=>0x0000000019d01000 JavaThread "Finalizer" daemon [_thread_in_vm, id=14044, stack(0x000000001a0e0000,0x000000001a1e0000)]
+  0x0000000017dfb000 JavaThread "Reference Handler" daemon [_thread_blocked, id=14720, stack(0x0000000019be0000,0x0000000019ce0000)]
+
+Other Threads:
+  0x0000000017df7800 VMThread [stack: 0x0000000019ae0000,0x0000000019be0000] [id=12752]
+
+VM state:synchronizing (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x0000000002d8cfe0] Threads_lock - owner thread: 0x0000000017df7800
+[0x0000000002dc1e50] Heap_lock - owner thread: 0x0000000002d8d800
+
+Heap:
+ PSYoungGen      total 37888K, used 1311K [0x00000000d6000000, 0x00000000d8a00000, 0x0000000100000000)
+  eden space 32768K, 4% used [0x00000000d6000000,0x00000000d6147c68,0x00000000d8000000)
+  from space 5120K, 0% used [0x00000000d8500000,0x00000000d8500000,0x00000000d8a00000)
+  to   space 5120K, 0% used [0x00000000d8000000,0x00000000d8000000,0x00000000d8500000)
+ ParOldGen       total 86016K, used 0K [0x0000000082000000, 0x0000000087400000, 0x00000000d6000000)
+  object space 86016K, 0% used [0x0000000082000000,0x0000000082000000,0x0000000087400000)
+ Metaspace       used 2169K, capacity 4480K, committed 4480K, reserved 1056768K
+  class space    used 230K, capacity 384K, committed 384K, reserved 1048576K
+
+Card table byte_map: [0x0000000012280000,0x0000000012680000] byte_map_base: 0x0000000011e70000
+
+Marking Bits: (ParMarkBitMap*) 0x000000006490be50
+ Begin Bits: [0x0000000013120000, 0x00000000150a0000)
+ End Bits:   [0x00000000150a0000, 0x0000000017020000)
+
+Polling page: 0x00000000013f0000
+
+CodeCache: size=245760Kb used=1059Kb max_used=1070Kb free=244700Kb
+ bounds [0x0000000002ec0000, 0x0000000003130000, 0x0000000011ec0000]
+ total_blobs=221 nmethods=1 adapters=135
+ compilation: enabled
+
+Compilation events (1 events):
+Event: 0.053 Thread 0x0000000019d1e800    2       3       java.lang.String::equals (81 bytes)
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (2 events):
+Event: 0.023 Thread 0x0000000002d8d800 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.defineClass(Ljava/lang/String;[BII)Ljava/lang/Class; name or signature does not match> (0x00000000d6007cb0) thrown at [C:\Users\jenkins\workspace\openjdk8_build_x86-64_windows\openjdk\hots
+Event: 0.023 Thread 0x0000000002d8d800 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.prefetchRead(Ljava/lang/Object;J)V name or signature does not match> (0x00000000d6007f98) thrown at [C:\Users\jenkins\workspace\openjdk8_build_x86-64_windows\openjdk\hotspot\src\share\vm\p
+
+Events (10 events):
+Event: 0.053 Thread 0x000000001a8e3800 Thread added: 0x000000001a8e3800
+Event: 0.053 loading class sun/misc/PostVMInitHook
+Event: 0.053 loading class sun/misc/PostVMInitHook done
+Event: 0.053 Thread 0x0000000002d8d800 Thread exited: 0x0000000002d8d800
+Event: 0.053 Thread 0x0000000002d8d800 Thread added: 0x0000000002d8d800
+Event: 0.053 loading class java/lang/Shutdown
+Event: 0.053 loading class java/lang/Shutdown done
+Event: 0.053 loading class java/lang/Shutdown$Lock
+Event: 0.053 loading class java/lang/Shutdown$Lock done
+Event: 0.054 Thread 0x0000000002d8d800 Thread exited: 0x0000000002d8d800
+
+
+Dynamic libraries:
+0x00007ff640dd0000 - 0x00007ff640e05000 	C:\Program Files\Unity\Hub\Editor\2019.2.14f1\Editor\Data\PlaybackEngines\AndroidPlayer\Tools\OpenJDK\Windows\bin\java.exe
+0x00007ff84c8c0000 - 0x00007ff84cab0000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ff84b900000 - 0x00007ff84b9b2000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ff849b20000 - 0x00007ff849dc3000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ff84bb60000 - 0x00007ff84bc03000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ff84b6a0000 - 0x00007ff84b73e000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ff84b9e0000 - 0x00007ff84ba77000 	C:\WINDOWS\System32\sechost.dll
+0x00007ff84c4b0000 - 0x00007ff84c5d0000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ff84c5d0000 - 0x00007ff84c764000 	C:\WINDOWS\System32\USER32.dll
+0x00007ff849a20000 - 0x00007ff849a41000 	C:\WINDOWS\System32\win32u.dll
+0x00007ff84b310000 - 0x00007ff84b336000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ff849e70000 - 0x00007ff84a004000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ff849dd0000 - 0x00007ff849e6e000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ff84a010000 - 0x00007ff84a10a000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ff839660000 - 0x00007ff8398e5000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.18362.476_none_e6c4b11b130f2595\COMCTL32.dll
+0x00007ff84aab0000 - 0x00007ff84ade6000 	C:\WINDOWS\System32\combase.dll
+0x00007ff849850000 - 0x00007ff8498d0000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ff84adf0000 - 0x00007ff84ae1e000 	C:\WINDOWS\System32\IMM32.DLL
+0x0000000064990000 - 0x0000000064a62000 	C:\Program Files\Unity\Hub\Editor\2019.2.14f1\Editor\Data\PlaybackEngines\AndroidPlayer\Tools\OpenJDK\Windows\jre\bin\msvcr100.dll
+0x0000000064140000 - 0x0000000064989000 	C:\Program Files\Unity\Hub\Editor\2019.2.14f1\Editor\Data\PlaybackEngines\AndroidPlayer\Tools\OpenJDK\Windows\jre\bin\server\jvm.dll
+0x00007ff84a970000 - 0x00007ff84a978000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ff845ba0000 - 0x00007ff845baa000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ff847410000 - 0x00007ff847434000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ff845720000 - 0x00007ff845729000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ff84bc10000 - 0x00007ff84bc7f000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ff8473e0000 - 0x00007ff84740d000 	C:\WINDOWS\SYSTEM32\winmmbase.dll
+0x00007ff849a50000 - 0x00007ff849a9a000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x00007ff8424f0000 - 0x00007ff8424ff000 	C:\Program Files\Unity\Hub\Editor\2019.2.14f1\Editor\Data\PlaybackEngines\AndroidPlayer\Tools\OpenJDK\Windows\jre\bin\verify.dll
+0x00007ff840160000 - 0x00007ff840189000 	C:\Program Files\Unity\Hub\Editor\2019.2.14f1\Editor\Data\PlaybackEngines\AndroidPlayer\Tools\OpenJDK\Windows\jre\bin\java.dll
+0x00007ff841980000 - 0x00007ff841996000 	C:\Program Files\Unity\Hub\Editor\2019.2.14f1\Editor\Data\PlaybackEngines\AndroidPlayer\Tools\OpenJDK\Windows\jre\bin\zip.dll
+0x00007ff84bdc0000 - 0x00007ff84c4a5000 	C:\WINDOWS\System32\SHELL32.dll
+0x00007ff84b5f0000 - 0x00007ff84b699000 	C:\WINDOWS\System32\shcore.dll
+0x00007ff84a110000 - 0x00007ff84a88e000 	C:\WINDOWS\System32\windows.storage.dll
+0x00007ff849810000 - 0x00007ff84982f000 	C:\WINDOWS\System32\profapi.dll
+0x00007ff8497a0000 - 0x00007ff8497ea000 	C:\WINDOWS\System32\powrprof.dll
+0x00007ff849790000 - 0x00007ff8497a0000 	C:\WINDOWS\System32\UMPDC.dll
+0x00007ff84c770000 - 0x00007ff84c7c2000 	C:\WINDOWS\System32\shlwapi.dll
+0x00007ff8497f0000 - 0x00007ff849801000 	C:\WINDOWS\System32\kernel.appcore.dll
+0x00007ff849b00000 - 0x00007ff849b17000 	C:\WINDOWS\System32\cryptsp.dll
+0x00007ff847f40000 - 0x00007ff848134000 	C:\WINDOWS\SYSTEM32\dbghelp.dll
+
+VM Arguments:
+java_command: <unknown>
+java_class_path (initial): .
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Unity\Hub\Editor\2019.2.14f1\Editor\Data\PlaybackEngines\AndroidPlayer/Tools\OpenJDK\Windows
+PATH=C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Users\DELL\AppData\Local\Microsoft\WindowsApps;;
+USERNAME=SYSTEM
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 142 Stepping 10, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 18362 (10.0.18362.329)
+
+CPU:total 8 (initial active 8) (4 cores per cpu, 2 threads per core) family 6 model 142 stepping 10, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx
+
+Memory: 4k page, physical 8250436k(1168948k free), swap 12444740k(2180k free)
+
+vm_info: OpenJDK 64-Bit Server VM (25.71-b00) for windows-amd64 JRE (1.8.0-adoptopenjdk-_2018_05_19_00_59-b00), built on May 19 2018 01:02:12 by "jenkins" with MS VC++ 10.0 (VS2010)
+
+time: Fri Dec 06 14:50:00 2019
+elapsed time: 0 seconds (0d 0h 0m 0s)
+

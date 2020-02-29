@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0df15d95f29dd4743904a1daf2d72025, type: 3}
+  m_Name: BG_1
+  m_EditorClassIdentifier: 
+  Spriteface: {fileID: 21300000, guid: 1b3fe889cfba1e44f93b5364dc00606c, type: 3}
+  id: 1
+  cost: 100
+  ballImage: {fileID: 21300000, guid: f9a8c78e766a3264f87cdf05555bca9d, type: 3}
+  isBuying: 1
+  isUse: 0
+  isUsing: 0
+  bas:
+  - {fileID: 21300000, guid: 761e32659edc8e0489a140ed0d5a76fc, type: 3}
+  - {fileID: 21300000, guid: c6a68d1ee337fab4b879566672d1e45c, type: 3}
+  bas_mode_1:
+  - {fileID: 21300000, guid: 3704aac3b62a1814fbfdf9cbe935f587, type: 3}
+  - {fileID: 21300000, guid: ad3b10a09c11f074a909f6fc0af3bea4, type: 3}
+  Gun: {fileID: 21300000, guid: 85cc9980db8d09a4ca8e6f028c9a9b4d, type: 3}
+  BgMode3_0: {fileID: 21300000, guid: 9fb3ec2d7001caa44821c0e25d63679a, type: 3}
+  BgMode3_1: {fileID: 21300000, guid: cbd1ae67d72235f409c0e6dc765f77c2, type: 3}
